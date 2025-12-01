@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계연주 11,111일 기념</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="dj-icon">🎧</div>
+            <div class="music-title">KOTA the Friend - PNW</div>
+            <h1 class="title">계연주 탄생 11,111일 기념</h1>
+            <div class="wave-container">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+            </div>
+            
+            <audio id="backgroundMusic" loop autoplay>
+                <source src="KOTA the Friend - PNW.mp3" type="audio/mpeg">
+            </audio>
+            
+            <div id="result" class="result">
+                <div class="result-card">
+                    <h2>11,111일이 되는 날</h2>
+                    <div class="date-display" id="targetDate"></div>
+                    <div class="countdown" id="countdown"></div>
+                    <div class="time-countdown" id="timeCountdown"></div>
+                    <div class="days-info" id="daysInfo"></div>
+                </div>
+                
+                <div class="celebration" id="celebration" style="display: none;">
+                    <div class="confetti">🎧</div>
+                    <h2 class="celebration-text">축하합니다! 🎉</h2>
+                    <p class="celebration-message">오늘은 계연주님이 태어난 지 정확히 11,111일이 되는 특별한 날입니다!</p>
+                    <p class="celebration-message">DJ의 꿈을 향한 새로운 시작을 축하합니다! 🎧✨</p>
+                </div>
+            </div>
+            
+            <div class="guestbook-section">
+                <h2 class="guestbook-title">💌 방명록</h2>
+                <div class="guestbook-form">
+                    <input type="text" id="guestName" placeholder="이름을 입력하세요" maxlength="20">
+                    <textarea id="guestMessage" placeholder="축하 메시지를 남겨주세요 💕" maxlength="200"></textarea>
+                    <button id="submitGuestbook" class="guestbook-btn">등록하기</button>
+                </div>
+                <div class="guestbook-list" id="guestbookList"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
